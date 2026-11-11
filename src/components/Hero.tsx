@@ -92,7 +92,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreMenu, onOpenStory }) => {
               {/* Primary Image Card */}
               <div className="relative overflow-hidden rounded-2xl shadow-xl border border-[#E0D2C2] bg-white group">
                 <img
-                  src="/src/assets/images/hero_artisan_pastry_spread_1794397547750.jpg"
+                  src="/assets/images/og-hero.jpg"
                   alt="Domaći kolači Jasminka Be – Slatko od srca"
                   className="w-full h-[360px] sm:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"

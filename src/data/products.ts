@@ -12,7 +12,7 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     ingredients: ['Puter 82%', 'Domaći orasi', 'Belgijska čokolada', 'Domaći pekmez', 'Brašno T-400', 'Prirodna vanilija', 'Svježa jaja'],
     allergens: ['Gluten', 'Jaja', 'Orašasti plodovi', 'Mlijeko'],
     minOrder: '1 kg',
-    image: '/src/assets/images/hero_artisan_pastry_spread_1794397547750.jpg',
+    image: '/assets/images/cookies-spread.jpg',
     isSpecialty: true,
     badge: 'Najtraženije',
     leadTimeDays: 3,
@@ -46,7 +46,7 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     ingredients: ['Tamna čokolada 70%', 'Puter', 'Jaja', 'Kakao', 'Smeđi šećer', 'Brašno'],
     allergens: ['Gluten', 'Jaja', 'Mlijeko'],
     minOrder: '1 kg',
-    image: '/src/assets/images/assorted_party_pastries_box_1794397547742.jpg',
+    image: '/assets/images/pastries-box.jpg',
     badge: 'Čokoladni hit',
     leadTimeDays: 2,
     estimatedPiecesPerKg: 40
@@ -62,7 +62,7 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     ingredients: ['Domaći orasi (preko 50% fila)', 'Tanke jufke', 'Zlatna agda', 'Puter', 'Svježi limun'],
     allergens: ['Gluten', 'Orašasti plodovi', 'Mlijeko'],
     minOrder: '1 kg (cca 10-12 velikih komada)',
-    image: '/src/assets/images/traditional_baklava_walnut_1794397547528.jpg',
+    image: '/assets/images/baklava.jpg',
     isSpecialty: true,
     badge: 'Tradicionalni recept',
     leadTimeDays: 3,
@@ -79,7 +79,7 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     ingredients: ['Puter', 'Jaja', 'Brašno', 'Griz', 'Jezgra oraha', 'Šećerni sirup s vanilijom'],
     allergens: ['Gluten', 'Jaja', 'Mlijeko', 'Orašasti plodovi'],
     minOrder: '1 kg',
-    image: '/src/assets/images/hero_artisan_pastry_spread_1794397547750.jpg',
+    image: '/assets/images/cookies-spread.jpg',
     leadTimeDays: 2,
     estimatedPiecesPerKg: 20
   },
@@ -109,7 +109,7 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     ingredients: ['Prženi lješnjaci', 'Petit beurre keks', 'Puter', 'Čokolada za kuhanje', 'Kakao'],
     allergens: ['Gluten', 'Mlijeko', 'Orašasti plodovi'],
     minOrder: '1 kg',
-    image: '/src/assets/images/assorted_party_pastries_box_1794397547742.jpg',
+    image: '/assets/images/pastries-box.jpg',
     leadTimeDays: 3,
     estimatedPiecesPerKg: 50
   },
@@ -124,7 +124,7 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     ingredients: ['Brašno', 'Jaja', 'Puter', 'Mljeveni orasi', 'Domaći pekmez', 'Čokolada', 'Rum aroma'],
     allergens: ['Gluten', 'Jaja', 'Mlijeko', 'Orašasti plodovi'],
     minOrder: '1 kg',
-    image: '/src/assets/images/hero_artisan_pastry_spread_1794397547750.jpg',
+    image: '/assets/images/cookies-spread.jpg',
     leadTimeDays: 3,
     estimatedPiecesPerKg: 35
   },
@@ -139,7 +139,7 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     ingredients: ['Mascarpone sir', 'Slatko vrhnje', 'Svježe maline i kupine', 'Biskvit od domaćih jaja', 'Bijela čokolada'],
     allergens: ['Gluten', 'Jaja', 'Mlijeko'],
     minOrder: '1 cijela torta (cca 2.5 kg)',
-    image: '/src/assets/images/celebration_cake_berries_1794397548460.jpg',
+    image: '/assets/images/cake-berries.jpg',
     isSpecialty: true,
     badge: 'Svečana preporuka',
     leadTimeDays: 4
@@ -155,7 +155,7 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     ingredients: ['Tostirani orasi', 'Bjelanjci', 'Tamna čokolada 60%', 'Žumanjci kuhani na pari', 'Puter 82%'],
     allergens: ['Jaja', 'Mlijeko', 'Orašasti plodovi'],
     minOrder: '1 cijela torta',
-    image: '/src/assets/images/celebration_cake_berries_1794397548460.jpg',
+    image: '/assets/images/cake-berries.jpg',
     badge: 'Stari klasik',
     leadTimeDays: 4
   },
@@ -170,7 +170,7 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     ingredients: ['Mlijeko', 'Svježa žumanca', 'Puter', 'Mahuna vanilije', 'Hrskave lisnate kore'],
     allergens: ['Gluten', 'Jaja', 'Mlijeko'],
     minOrder: 'Minimalno 8 komada',
-    image: '/src/assets/images/hero_artisan_pastry_spread_1794397547750.jpg',
+    image: '/assets/images/cookies-spread.jpg',
     leadTimeDays: 2
   },
   {
@@ -184,7 +184,7 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     ingredients: ['Sve vrste naših sitnih kolača', 'Puter', 'Orasi', 'Lješnjaci', 'Čokolada', 'Domaći pekmezi'],
     allergens: ['Gluten', 'Jaja', 'Mlijeko', 'Orašasti plodovi'],
     minOrder: '1 paket (3 kg)',
-    image: '/src/assets/images/assorted_party_pastries_box_1794397547742.jpg',
+    image: '/assets/images/pastries-box.jpg',
     isSpecialty: true,
     badge: 'Najisplativije',
     leadTimeDays: 4
