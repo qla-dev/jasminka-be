@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-import { Heart, FileText, Award, Instagram, CheckCircle2, Maximize2, X } from 'lucide-react';
+import React from 'react';
+import { Heart, FileText, Award, Instagram, CheckCircle2 } from 'lucide-react';
 import { CONTACT_INFO } from '../data/products';
 
 export const StorySection: React.FC = () => {
-  const [flyerModalOpen, setFlyerModalOpen] = useState(false);
-
   return (
     <section id="o-meni" className="py-16 md:py-24 bg-[#F5ECE1] border-b border-[#E8DEC8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,29 +84,6 @@ export const StorySection: React.FC = () => {
           {/* Right Column: Visual Announcement flyer + Business Pillars */}
           <div className="lg:col-span-5 space-y-6">
             
-            {/* Interactive Announcement flyer card */}
-            <div className="bg-white p-4 rounded-2xl border border-[#E3D6C5] shadow-sm relative group overflow-hidden">
-              <div className="relative overflow-hidden rounded-xl bg-[#FAF7F2]">
-                <img
-                  src="/jasminka-be/assets/aistudio/IMG_8401_0a0e46ad.png"
-                  alt="Zvanična objava otvaranja Jasminka Be – Slatko od srca"
-                  className="w-full h-80 object-cover object-top group-hover:scale-102 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                />
-                <button
-                  onClick={() => setFlyerModalOpen(true)}
-                  className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white gap-2 font-medium text-sm"
-                >
-                  <Maximize2 className="w-5 h-5" />
-                  <span>Uvećaj zvaničnu objavu</span>
-                </button>
-              </div>
-              <div className="pt-3 px-1 flex items-center justify-between text-xs text-[#6E5A52]">
-                <span>Zvanična objava o početku rada</span>
-                <span className="font-semibold text-[#8C4830]">Klikni za pregled</span>
-              </div>
-            </div>
-
             {/* 3 Pillars of Trust */}
             <div className="space-y-3">
               <div className="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-[#E3D6C5]">
@@ -147,32 +122,6 @@ export const StorySection: React.FC = () => {
         </div>
       </div>
 
-      {/* Modal for viewing the full original announcement flyer */}
-      {flyerModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
-          <div className="relative max-w-lg w-full bg-white rounded-2xl overflow-hidden max-h-[90vh] flex flex-col">
-            <div className="p-4 border-b border-[#E8DEC8] flex items-center justify-between">
-              <span className="font-display font-bold text-[#301F1B]">
-                Zvanična objava otvaranja djelatnosti
-              </span>
-              <button
-                onClick={() => setFlyerModalOpen(false)}
-                className="p-1.5 text-stone-500 hover:text-black rounded-lg"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
-            <div className="overflow-y-auto p-4 flex justify-center bg-[#FAF7F2]">
-              <img
-                src="/jasminka-be/assets/aistudio/IMG_8401_0a0e46ad.png"
-                alt="Zvanična objava"
-                className="max-h-[75vh] object-contain rounded-lg shadow-md"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };
