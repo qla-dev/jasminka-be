@@ -136,6 +136,7 @@ putenv('PATH='.$nodeBinDir.PATH_SEPARATOR.$currentPath);
 $npmCommand = escapeshellarg($npm);
 
 $commands = [
+    ['label' => 'Cleaning untracked files', 'command' => 'git checkout -- . && git clean -fd'],
     ['label' => 'Pulling latest Jasminka BE code', 'command' => 'git pull --ff-only'],
     ['label' => 'Installing dependencies', 'command' => $npmCommand.' install --no-audit --no-fund --legacy-peer-deps'],
     ['label' => 'Building Jasminka BE app', 'command' => $npmCommand.' run build'],
