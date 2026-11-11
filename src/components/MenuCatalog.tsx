@@ -208,7 +208,7 @@ export const MenuCatalog: React.FC<MenuCatalogProps> = ({
                     {/* Clean unboxed category & lead time metadata */}
                     <div className="flex items-center gap-2 text-[11px] text-[#7B665C]">
                       <span className="uppercase tracking-wider font-semibold">
-                        {product.unit === 'kg' ? 'Kolači po kg' : product.unit === 'tortu' ? 'Svečana torta' : 'Ketering'}
+                        {product.unit === 'kg' ? 'Kolači po kg' : 'Ketering'}
                       </span>
                       <span aria-hidden="true">·</span>
                       <span className="flex items-center gap-1">

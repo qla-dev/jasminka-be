@@ -2,7 +2,6 @@ export type ProductCategory =
   | 'all'
   | 'sitni-kolaci'
   | 'tradicionalni'
-  | 'torte'
   | 'kremasti'
   | 'paketi';
 
@@ -11,7 +10,7 @@ export interface ProductItem {
   name: string;
   category: ProductCategory;
   priceKM: number;
-  unit: 'kg' | 'kom' | 'kutija' | 'tortu';
+  unit: 'kg' | 'kom' | 'kutija';
   description: string;
   storyNote?: string;
   ingredients: string[];

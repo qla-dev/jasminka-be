@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
                 Jasminka Be
               </span>
               <span className="font-serif italic text-sm text-[#E0A899] block">
-                Slatko od srca · Domaći Kolači & Torte
+                Slatko od srca · Domaći Kolači
               </span>
             </div>
             <p className="text-xs sm:text-sm text-[#BFABA2] leading-relaxed max-w-sm">

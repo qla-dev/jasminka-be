@@ -104,7 +104,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreMenu, onOpenStory }) => {
                     Artisan Asortiman
                   </span>
                   <h3 className="font-display text-xl sm:text-2xl font-bold mt-1 text-white">
-                    Sitni kolači, baklave i torte
+                    Sitni kolači i baklave
                   </h3>
                   <p className="text-xs sm:text-sm text-stone-200 mt-1">
                     Preko 10 tradicionalnih i modernih poslastica po vašoj želji

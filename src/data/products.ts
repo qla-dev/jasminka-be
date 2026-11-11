@@ -129,37 +129,6 @@ export const BAKERY_PRODUCTS: ProductItem[] = [
     estimatedPiecesPerKg: 35
   },
   {
-    id: 'svecana-torta-mascarpone-bobicasto',
-    name: 'Svečana Torta Mascarpone & Šumsko Voće',
-    category: 'torte',
-    priceKM: 70,
-    unit: 'tortu',
-    description: 'Raskošna troslojna torta s vanilin biskvitom, svilenkastom mascarpone kremom i domaćim preljevom od malina i šumskih kupina, ukrašena svježim voćem.',
-    storyNote: 'Idealan balans osvježavajućeg voća i kremaste punine. Prečnik 26 cm, za cca 18-20 izdašnih parčadi.',
-    ingredients: ['Mascarpone sir', 'Slatko vrhnje', 'Svježe maline i kupine', 'Biskvit od domaćih jaja', 'Bijela čokolada'],
-    allergens: ['Gluten', 'Jaja', 'Mlijeko'],
-    minOrder: '1 cijela torta (cca 2.5 kg)',
-    image: '/jasminka-be/assets/images/cake-berries.jpg',
-    isSpecialty: true,
-    badge: 'Svečana preporuka',
-    leadTimeDays: 4
-  },
-  {
-    id: 'reforma-torta-orasi',
-    name: 'Klasična Reforma Torta s Pečenim Orasima',
-    category: 'torte',
-    priceKM: 75,
-    unit: 'tortu',
-    description: 'Vrhunac poslastičarske tradicije: tanke kore od bjelanjaka i tostiranih oraha, spajane bogatom kuhanom čokoladnom kremom na pari s puterom.',
-    storyNote: 'Bez brašna u korama, samo obilje oraha i prava čokolada. Prečnik 26 cm, cca 2.6 kg.',
-    ingredients: ['Tostirani orasi', 'Bjelanjci', 'Tamna čokolada 60%', 'Žumanjci kuhani na pari', 'Puter 82%'],
-    allergens: ['Jaja', 'Mlijeko', 'Orašasti plodovi'],
-    minOrder: '1 cijela torta',
-    image: '/jasminka-be/assets/images/cake-berries.jpg',
-    badge: 'Stari klasik',
-    leadTimeDays: 4
-  },
-  {
     id: 'kremsnite-domace',
     name: 'Domaće Kremšnite s Vanilijom i Puterom',
     category: 'kremasti',
@@ -195,7 +164,6 @@ export const CATEGORIES = [
   { id: 'all', label: 'Svi Proizvodi' },
   { id: 'sitni-kolaci', label: 'Sitni Kolači' },
   { id: 'tradicionalni', label: 'Tradicionalne Delicije' },
-  { id: 'torte', label: 'Svečane Torte' },
   { id: 'kremasti', label: 'Kremasti Kolači' },
   { id: 'paketi', label: 'Paketi za Proslave' },
 ] as const;

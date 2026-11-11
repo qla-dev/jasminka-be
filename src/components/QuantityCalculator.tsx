@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calculator, Users, Cake, Sparkles, Check, ArrowRight } from 'lucide-react';
+import { Calculator, Users, Sparkles, Check, ArrowRight } from 'lucide-react';
 import { BAKERY_PRODUCTS } from '../data/products';
 import { ProductItem } from '../types/bakery';
 
@@ -14,20 +14,15 @@ export const QuantityCalculator: React.FC<QuantityCalculatorProps> = ({
 }) => {
   const [guestsCount, setGuestsCount] = useState<number>(30);
   const [eventType, setEventType] = useState<'slava' | 'svadba' | 'rodjendan' | 'praznik'>('slava');
-  const [hasCake, setHasCake] = useState<boolean>(true);
   const [isPosno, setIsPosno] = useState<boolean>(false);
   const [addedNotice, setAddedNotice] = useState<boolean>(false);
 
-  // Math: standard serving
-  // Without cake: ~140g - 160g per person (~6-7 mini pieces)
-  // With cake: ~90g - 110g per person (~4-5 mini pieces) + 1 whole cake or slices
-  const gramsPerGuest = hasCake ? 100 : 150;
+  const gramsPerGuest = 150;
   const totalKg = Math.max(1, Math.round((guestsCount * gramsPerGuest) / 500) * 0.5);
   const totalPiecesEst = Math.round(totalKg * 42);
 
-  // Price estimate (Mix sitnih kolača is 28 KM/kg)
   const priceMixKM = 28;
-  const estimatedCostKM = totalKg * priceMixKM + (hasCake && eventType === 'rodjendan' ? 70 : 0);
+  const estimatedCostKM = totalKg * priceMixKM;
 
   const formatPrice = (km: number) => {
     if (currency === 'EUR') {
@@ -39,13 +34,6 @@ export const QuantityCalculator: React.FC<QuantityCalculatorProps> = ({
   const handleApply = () => {
     const mixProduct = BAKERY_PRODUCTS.find((p) => p.id === 'mix-sitnih-kolaca') || BAKERY_PRODUCTS[0];
     const itemsToAdd = [{ product: mixProduct, quantity: totalKg }];
-
-    if (hasCake && (eventType === 'rodjendan' || eventType === 'svadba')) {
-      const cakeProduct = BAKERY_PRODUCTS.find((p) => p.id === 'svecana-torta-mascarpone-bobicasto');
-      if (cakeProduct) {
-        itemsToAdd.push({ product: cakeProduct, quantity: 1 });
-      }
-    }
 
     onAddRecommendation(itemsToAdd);
     setAddedNotice(true);
@@ -131,25 +119,8 @@ export const QuantityCalculator: React.FC<QuantityCalculatorProps> = ({
               </div>
             </div>
 
-            {/* Checkboxes: Cake & Posno */}
+            {/* Checkbox: Posno */}
             <div className="space-y-3 pt-2">
-              <label className="flex items-center gap-3 cursor-pointer p-3 rounded-xl border border-[#E8DEC8] hover:bg-[#FAF7F2] transition-colors">
-                <input
-                  type="checkbox"
-                  checked={hasCake}
-                  onChange={(e) => setHasCake(e.target.checked)}
-                  className="w-4 h-4 text-[#8C4830] rounded-sm focus:ring-[#8C4830] accent-[#8C4830]"
-                />
-                <div className="text-xs">
-                  <span className="font-bold text-[#301F1B] block">
-                    Servira se i torta uz sitne kolače
-                  </span>
-                  <span className="text-[#7B665C] block">
-                    (Umanjuje potrebnu količinu sitnih kolača na ~100g po osobi)
-                  </span>
-                </div>
-              </label>
-
               <label className="flex items-center gap-3 cursor-pointer p-3 rounded-xl border border-[#E8DEC8] hover:bg-[#FAF7F2] transition-colors">
                 <input
                   type="checkbox"

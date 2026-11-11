@@ -298,7 +298,7 @@ export const OrderDrawer: React.FC<OrderDrawerProps> = ({
                     className="w-full px-3 py-2 text-xs bg-[#FAF7F2] border border-[#E0D2C2] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#8C4830] text-[#301F1B]"
                   />
                   <span className="text-[10px] text-[#7B665C] block">
-                    Preporučujemo najavu minimalno 2-3 dana ranije za sitne kolače, a 4 dana za torte.
+                    Preporučujemo najavu minimalno 2-3 dana ranije za sitne kolače, a 5-7 dana za veće količine.
                   </span>
                 </div>
 

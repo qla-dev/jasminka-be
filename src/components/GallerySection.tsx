@@ -36,8 +36,8 @@ export const GallerySection: React.FC = () => {
     {
       id: 'g4',
       image: '/jasminka-be/assets/images/cake-berries.jpg',
-      title: 'Svečana Rođendanska & Vjenčana Torta',
-      caption: 'Kremasti mascarpone fil sa šumskim voćem i jestivim zlatnim listićima.',
+      title: 'Svečana Poklon Kolekcija',
+      caption: 'Bogat asortiman domaćih kolača za rođendane i vjenčanja.',
     },
     {
       id: 'g5',

@@ -79,7 +79,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
             <div>
               <span className="text-xs uppercase tracking-wider text-amber-200 font-semibold block">
-                {product.unit === 'kg' ? 'Kolači na kilogram' : product.unit === 'tortu' ? 'Svečana torta' : 'Delicije'}
+                {product.unit === 'kg' ? 'Kolači na kilogram' : 'Delicije'}
               </span>
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-white">
                 {product.name}

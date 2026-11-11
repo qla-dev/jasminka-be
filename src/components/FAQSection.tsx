@@ -13,7 +13,7 @@ export const FAQSection: React.FC = () => {
     {
       question: 'Koliko ranije je potrebno rezervisati narudžbu?',
       answer:
-        'Za sitne kolače (1–3 kg) preporučujemo najavu 2 do 3 dana ranije kako bismo sve ispekli svježe. Za veće količine (slavski i svadbeni stolovi preko 5 kg) preporučujemo najavu 5 do 7 dana unaprijed. Svečane torte zahtijevaju najavu minimalno 4 dana ranije.',
+        'Za sitne kolače (1–3 kg) preporučujemo najavu 2 do 3 dana ranije kako bismo sve ispekli svježe. Za veće količine (slavski i svadbeni stolovi preko 5 kg) preporučujemo najavu 5 do 7 dana unaprijed.',
     },
     {
       question: 'Da li je djelatnost registrovana i da li izdajete račun?',
