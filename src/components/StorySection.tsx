@@ -90,7 +90,7 @@ export const StorySection: React.FC = () => {
             <div className="bg-white p-4 rounded-2xl border border-[#E3D6C5] shadow-sm relative group overflow-hidden">
               <div className="relative overflow-hidden rounded-xl bg-[#FAF7F2]">
                 <img
-                  src="/assets/aistudio/IMG_8401_0a0e46ad.png"
+                  src="/jasminka-be/assets/aistudio/IMG_8401_0a0e46ad.png"
                   alt="Zvanična objava otvaranja Jasminka Be – Slatko od srca"
                   className="w-full h-80 object-cover object-top group-hover:scale-102 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -164,7 +164,7 @@ export const StorySection: React.FC = () => {
             </div>
             <div className="overflow-y-auto p-4 flex justify-center bg-[#FAF7F2]">
               <img
-                src="/assets/aistudio/IMG_8401_0a0e46ad.png"
+                src="/jasminka-be/assets/aistudio/IMG_8401_0a0e46ad.png"
                 alt="Zvanična objava"
                 className="max-h-[75vh] object-contain rounded-lg shadow-md"
                 referrerPolicy="no-referrer"

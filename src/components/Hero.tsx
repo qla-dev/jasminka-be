@@ -92,7 +92,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreMenu, onOpenStory }) => {
               {/* Primary Image Card */}
               <div className="relative overflow-hidden rounded-2xl shadow-xl border border-[#E0D2C2] bg-white group">
                 <img
-                  src="/assets/images/og-hero.jpg"
+                  src="/jasminka-be/assets/images/og-hero.jpg"
                   alt="Domaći kolači Jasminka Be – Slatko od srca"
                   className="w-full h-[360px] sm:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"
@@ -116,7 +116,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreMenu, onOpenStory }) => {
               <div className="absolute top-3 right-3 sm:-top-5 sm:-right-5 bg-white/95 backdrop-blur-sm p-3 sm:p-3.5 rounded-xl border border-[#E0D2C2] shadow-lg max-w-[230px] sm:max-w-[260px] z-10 transition-transform hover:scale-105">
                 <div className="flex items-center gap-3">
                   <img
-                    src="/assets/aistudio/IMG_8402_c6de73a2.png"
+                    src="/jasminka-be/assets/aistudio/IMG_8402_c6de73a2.png"
                     alt="Punjeni vanil-kolačići s džemom"
                     className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-[#EADFCF] shrink-0"
                     referrerPolicy="no-referrer"
