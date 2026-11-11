@@ -137,8 +137,9 @@ $npmCommand = escapeshellarg($npm);
 
 $commands = [
     ['label' => 'Pulling latest Jasminka BE code', 'command' => 'git pull --ff-only'],
-    ['label' => 'Installing dependencies', 'command' => $npmCommand.' ci --no-audit --no-fund'],
+    ['label' => 'Installing dependencies', 'command' => $npmCommand.' install --no-audit --no-fund'],
     ['label' => 'Building Jasminka BE app', 'command' => $npmCommand.' run build'],
+    ['label' => 'Deploying build output', 'command' => 'cp -af dist/. .'],
 ];
 
 $startedAt = time();
