@@ -1,0 +1,6 @@
+{
+  "name": "Jasminka Be – Slatko od srca",
+  "description": "Zvanična web stranica, cjenovnik i online narudžbe domaćih kolača i slastica Jasminka Be – Slatko od srca.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
